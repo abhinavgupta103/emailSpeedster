@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  background-image: url("C:\Users\sachin.thorat\Desktop\EmailPython\EmailSys\templates\tech.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div class="bg">
+<h2 align = "center"> <font color ="red">&nbsp;<br>Mail Speedster</font></h2>
+
+<form align="left" >
+<br><br><br><br><br><br><br><br><br><br>
+  &nbsp; <font color = "red"><b>File Path:</b></font>&nbsp; &nbsp;  
+  &nbsp; <input type="path" value="fpath" id="path"><Br>
+  &nbsp; <font color ="black"> <b>Note : Provide the path file attachment. </b></font> <br>
+  <h4><p><font color ="red"> &nbsp; Click <a href="C:\Users\sachin.thorat\Desktop\EmailPython\EmailSys\templates\Mail Creator.xlsm" download>here</a> to download template</font></p>
+</form>
+<font color ="red">
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    &nbsp; Select file to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload File" name="submit">
+</form>
+</font>
+<button onclick="location.href='{% url 'script' %}'">
+   Submit</button>
+    <hr>
+
+</div>
+</body>
+</html>
